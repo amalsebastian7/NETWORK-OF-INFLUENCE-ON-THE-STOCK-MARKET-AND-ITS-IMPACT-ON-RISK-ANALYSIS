@@ -137,7 +137,7 @@ deviation" is the most often used metric for measuring volatility. This calculat
 
 Creating a line plot for the moving average of volatility values of log returns to see if there is any noticeable trend. A typical stock indicator in technical analysis is the moving average (MA). The purpose of generating a stock's moving average is to provide a continuously updated average price that will assist smooth out the price data over a set period of time.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.009.jpeg)![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.010.jpeg.jpg)
+<img src="https://github.com/amalsebastian7/NETWORK-OF-INFLUENCE-ON-THE-STOCK-MARKET-AND-ITS-IMPACT-ON-RISK-ANALYSIS/blob/9889ab2e252384d74b8da6008d9f40752e64ef72/Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.009.jpeg.jpg" />
 
 Fig 7: The moving average of volatility of log returns clearly demonstrates that the crypto index is excessively volatile and that all crypto currencies are much more volatile than any stock index.
 
