@@ -66,13 +66,14 @@ After defining the Time period, which is considered for this analysis, all data 
 
 The Timeseries of all crypto data are grouped into a list and all indexes into another for better visualisation. ’DateListPlot’ (also known as a time series plot, that traverse value vi sequentially from left to right. Irrespective of the data's original sequence, the line presents the dates in chronological order before presenting the data). This is used as an initial analysis method to find if there are any trends. Then Histogram is plotted adjacently to respective list plots to compare the frequencies of those values, attached to each bin.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.002.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.002.jpeg.jpg)
+
 
 Fig .1: Timeseries plots to identify the trend and frequency.
 
 There is a clear connection between all three stock indexes as expected specifically SP500 and Nasdaq where both indexes had a steady growth till the pandemic from where it drops and then gain back its momentum whereas for Dow jones it is evident that there is a bigger dip due to pandemic. Less diversification and number of stocks compared to the former indexes could be one reason. Contrary to comparatively stable stock indexes, the cci30 remains unstable. It is apparent that the crypto index hit its high thriving on the pandemic instabilities in stock market. This could be an initial indicator of the flow of wealth from stock to crypto. Over the period, this crypto bull market plummeted to its all-time low from 2021.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.003.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.003.jpeg.jpg)
 
 
 Fig 2: List plot and histogram plot of crypto to identify the trend and frequency of all bins.
@@ -93,7 +94,7 @@ Where, x̄ = Mean of x variable, ȳ = Mean of y variable. Standard Deviation of
 
 To justify the dates of evaluation, the crypto data is further reduced to business days data as, stock market runs only on weekdays using TimeSeriesResample function (commonly used to change inconsistent time series to steady ones. Aligning time series is another application for this). The dates are stored in a variable and a new list is created with all timeseries. The dimensions of these dataset are rechecked before proceeding to correlation. The data set is transposed and checks for correlation and is plotted.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.004.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.004.jpeg.jpg)
 
 Fig 3:price correlation matrix showing the correlation between all assets.
 
@@ -105,7 +106,7 @@ index with Ethereum on top with 0.94. Finally, my first impression was that bitc
 
 The returns for each timeseries are calculated using the formula below, which corresponds to Mathematica’s “Differences [Log]” function is used.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.005.png)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.005.png.png)
 
 Fig 4: Returns equation
 
@@ -113,7 +114,7 @@ Fig 4: Returns equation
 
 Here, Pt is the price of an asset in time t and Rt is the log of initial Pt by previous Pt-1. As crypto currencies have non-business days, it is filtered out and the data points are short to 1147.A list is created with all the processed time series and the values are fetched using TimeSeriesResample function. The correlation of this returns is calculated.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.006.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.006.jpeg.jpg)
 
 Fig 5: Returns correlation Matrix.
 
@@ -125,7 +126,7 @@ Consequently, both Bitcoin and Ethereum returns are highly connected to cci30 in
 
 Standard Deviation, commonly used to measure volatility in stock market, quantifies or measures dispersion of data or distributions. Standard deviation is calculated by taking the square root of a value derived from comparing data points to a collective mean of a population (Investopedia 2022). The formula is:
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.008.png)𝑛 − 1
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.008.png.png)
 
 
 Fig 6: Standard deviation
@@ -136,19 +137,19 @@ deviation" is the most often used metric for measuring volatility. This calculat
 
 Creating a line plot for the moving average of volatility values of log returns to see if there is any noticeable trend. A typical stock indicator in technical analysis is the moving average (MA). The purpose of generating a stock's moving average is to provide a continuously updated average price that will assist smooth out the price data over a set period of time.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.009.jpeg)![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.010.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.009.jpeg)![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.010.jpeg.jpg)
 
 Fig 7: The moving average of volatility of log returns clearly demonstrates that the crypto index is excessively volatile and that all crypto currencies are much more volatile than any stock index.
 
 A Histogram is plotted for every data to see the frequency of volatility of the data. The amount of volatility and the frequency is very less for the stock indexes when compared to the Crypto index.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.011.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.011.jpeg.jpg)
 
 Fig 8: Histogram plot for volatility to identify the distribution
 
 The correlation matrix for the volatility is calculated to see if there are any correlation between the values. All stock indexes are highly correlated and the cci30 is correlated to bitcoin and Ethereum.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.012.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.012.jpeg.jpg)
 
 Fig 9: Volatility correlation matrix
 
@@ -170,7 +171,7 @@ The number of occasions a node functions as a bridge over the shortest distance 
 
 An adjacent matrix for the log returns correlation and price correlation are created and plotted (is also known as connection matrix, of a simple labelled graph is a matrix with rows and columns labelled by 0 or 1 according to if their adjacency). This is then used to plot an initial graph.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.013.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.013.jpeg.jpg)
 
 Fig 10: Weighted graph for both correlations
 
@@ -180,7 +181,7 @@ Next, the eigen-vector centrality of each node is found. This gives a brief idea
 
 Now, the betweenness centrality and the community graph plot (Santo Fortunato) are plotted for both on price and returns correlations. Betweenness is to find out the importance or the probability of occurrence of each node in a randomly selected path. The community graph plot is plotted to find the formation of clusters or any nodes that connect the clusters if any. This allows us to make a more informed assessment or investment decision as Communities, also referred to as clusters or modules, are collections of vertices that most likely have comparable traits and/or function in related ways inside the network. A node's connections to other nodes within the same community are quite strong (Newman).
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.014.jpeg)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.014.jpeg.jpg)
 
 Fig 11: Betweenness and community plot for both correlations.
 
