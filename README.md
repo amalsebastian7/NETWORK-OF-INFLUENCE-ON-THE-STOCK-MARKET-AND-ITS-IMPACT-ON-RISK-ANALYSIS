@@ -1,42 +1,11 @@
-**NETWORK OF INFLUENCE ON THE STOCK MARKET AND ITS IMPACT ON RISK ANALYSIS**
+# **NETWORK OF INFLUENCE ON THE STOCK MARKET AND ITS IMPACT ON RISK ANALYSIS**
+### AMAL PAMBACKAL SEBASTIAN: AUGUST 2022
 
-
-**BY**
-
-
-
-**AMAL PAMBACKAL SEBASTIAN (ID: 52103205)**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Supervisors: Murilo S Baptista and Yuan Yuan Zhao
-
-THIS DISSERTATION IS SUBMITTED TO THE UNIVERSITY OF ABERDEEN, IN PARTIAL FULFILMENT OF THE REQUIREMENT FOR THE AWARD OF MASTER OF SCIENCE DEGREE IN DATA SCIENCE
-
-
-
-AUGUST 2022
-
-**ABSTRACT**
+## **ABSTRACT**
 
 The goal of this research is to better understand the relationships between cryptocurrencies and stock indexes, including how cryptocurrencies are interconnected. Preliminary visualization revealed a trend of market movement across all cryptocurrencies, indicating a substantial correlation. Initial analysis focusses on finding the correlation between the stock indexes and cryptocurrencies value returns. Another objective is to study the volatility of the asset value measured by standard deviation of each asset for a short period and to further calculate the correlation between them. In order to express relationships between assets in a pictorial format, graphs are used. The assets are represented by the graph vertices, and the relationships between them are shown by edges in the graph. Further, centrality is crucial in identifying important nodes. Two measures will be considered, Eigen-vector centrality (measuring likelihood of visitation to a node) and betweenness centrality (counting the instance in which counts the instances in which a node acts as a bridge facilitating the quickest and shortest route between two nodes). The tests were carried out on four indexes (three stock indexes and one crypto index) and six well-known cryptocurrencies based on the quantity and accessibility of historical trading data. The results of the research based on the time series of price returns, points to a strong relationship between Ethereum and Bitcoin in cryptocurrencies, but Dow Jones and S&P 500 have the strongest correlation when it comes to stock indices. The moving average of volatility showed that cci30 is highly volatile compared to other stock indexes and all six crypto currencies are highly volatile. The network graph demonstrates the interconnectedness and clustering of the selected cryptocurrency currencies. It’s evident that Bitcoin functions as a central node, which means it has the highest likelihood of appearing on a random path in the graph.
 
-**Introduction**
+## **Introduction**
 
 The core of investment is in-depth research and diversification, just as it is wise to not put all of the eggs in one basket. A balanced investing strategy incorporates many asset types into a portfolio. An investing plan that aims to strike a balance between capital preservation and growth is said to be balanced (Alok Kumar 2001). While more aggressive investors may choose growth methods, more conservative investors may choose capital preservation techniques.
 
@@ -56,17 +25,12 @@ The advantages of diversification can generally be limited by a high level of vo
 
 When the economy is experiencing high levels of volatility, traders can use the insights to modify their asset portfolios or develop investing strategies. In addition, since it is clear that some particular cryptocurrencies now dominate the market with their relatively high market cap (Yahoo finance), researching on and determining whether there is a dominating cryptocurrency is also an objective of this research.
 
-Six cryptocurrencies have been chosen for empirical investigation using trade data in accordance with their market capitalisation and an estimate of their volatility connectivity in order to first gain a preliminary understanding of the market. With the aim of examining the similarities and differences between stock and cryptocurrency networks based on log-return1 and volatility time series, the analysis compares cryptocurrencies, crypto indexes, and stock indexes (Mariana 2019). A collection of financial assets can be represented as a weighted
-
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.001.png)
-
-1 Log returns or continuously compounded rate of return, for instance consider a $10 stock that increased to $12 and then dropped back to $10. According to basic returns, you will have a 20% gain during the first time period and a 16.7% decline during the second. Even though you didn't make any money at all, if you just sum them up or even take an average, you will have a total return of 3.3 percent and an average return of 1.7 percent. However, as log returns are continually compounded, they can be added over time. In this example, adding the log returns across the time results in a total and average return of zero percent.
-
-graph, with the edge weights indicating the intensity of relationship between the assets. The correlation coefficient for any pair of assets return time series can be calculated and represented by a weighted edge connecting two labelled nodes. This concept is not new and has been addressed by several authors (G. Bonanno 2003,2004). The network is dominated by core nodes, who also govern information transmission and all other linked nodes. What happens to them thus has an impact on the others. You can tell what's going on with any other related asset by taking a peek at them. And by keeping an eye on these major hub assets, you can comprehend the market.
+Six cryptocurrencies have been chosen for empirical investigation using trade data in accordance with their market capitalisation and an estimate of their volatility connectivity in order to first gain a preliminary understanding of the market. With the aim of examining the similarities and differences between stock and cryptocurrency networks based on log-return(*~Log returns or continuously compounded rate of return, for instance consider a $10 stock that increased to $12 and then dropped back to $10. According to basic returns, you will have a 20% gain during the first time period and a 16.7% decline during the second. Even though you didn't make any money at all, if you just sum them up or even take an average, you will have a total return of 3.3 percent and an average return of 1.7 percent. However, as log returns are continually compounded, they can be added over time. In this example, adding the log returns across the time results in a total and average return of zero percent*)
+and volatility time series, the analysis compares cryptocurrencies, crypto indexes, and stock indexes (Mariana 2019). A collection of financial assets can be represented as a weighted graph, with the edge weights indicating the intensity of relationship between the assets. The correlation coefficient for any pair of assets return time series can be calculated and represented by a weighted edge connecting two labelled nodes. This concept is not new and has been addressed by several authors (G. Bonanno 2003,2004). The network is dominated by core nodes, who also govern information transmission and all other linked nodes. What happens to them thus has an impact on the others. You can tell what's going on with any other related asset by taking a peek at them. And by keeping an eye on these major hub assets, you can comprehend the market.
 
 The main findings are that the Bitcoin is the most central node in this selected network and all cryptocurrencies are highly interconnected or correlated. In addition, moving average of volatility clearly demonstrates that the crypto index is excessively volatile and that all crypto currencies are much more volatile than any stock index
 
-**Literature Review**
+## **Literature Review**
 
 Although digital currencies are relatively new to the market, they have made their way into popular investment portfolio due to their greater expected gains, though more volatile than regular markets. These are some of the reasons why they encouraged more study into portfolio diversification for other financial assets (Bouri 2017a).
 
@@ -78,36 +42,29 @@ The crypto price bubble popped before the end of 2018 and the price euphoria did
 
 As a consequence, it is extremely important to note the information-transmission dynamics seen between major stock markets and cryptocurrencies. Numerous features of cryptocurrencies and how they relate to other capital instruments have been examined in research. For example, (Bouri 2018) explored how Bitcoin is related to conventional financial asset types. Shows a tight relationship between Bitcoin returns and several other sectors, notably commodities, indicating that the cryptocurrency market is not wholly unrelated to other marketplaces. Cryptocurrencies and Forex market have a negative correlation, according to (Baumöhl 2019), who said that purchasing these assets might help the overall diversification of their portfolios. (Yi 2018) Built a network of a collection of cryptocurrencies' variance connectedness and discovered that cryptocurrencies with high market caps were more likely to spread volatility issues to other cryptocurrencies.
 
-Nevertheless, Additional notable transferers of volatility connection were certain lesser-
-
-known cryptocurrencies which even enhanced the spill over effects to certain other cryptocurrencies.
-
+Nevertheless, Additional notable transferers of volatility connection were certain lesser-known cryptocurrencies which even enhanced the spill over effects to certain other cryptocurrencies.
 These publications have provided a thorough understanding of how the stock market and cryptocurrency markets operate and how they are interconnected. Insights, particularly on the dependability of various marketplaces, for building a portfolio, based on stability and the predictability of assets.
 
-**Methodology**
+## **Methodology**
 
 
 
 
-**Data collection**
+### **Data collection**
 
 The primary data collection process includes collection historic trading data of six crypto currencies namely Cardano (ADA), Bitcoin (BTC), Ethereum (ETH), Binance (BNB), Dogecoin (DOGE), Ripple (XRP) (source: Yahoo Finance). The choice of these six cryptocurrencies follows a three-tier approach of top, middle and lower tier currencies (Gandal 2016), (Bouri 2017a). "Top-tier" cryptocurrencies include Bitcoin, and Ethereum, which have market capitalizations over 100B USD. Ripple and Cardano with market capitalizations under 100B USD but greater than 30B USD (Yahoo finance). Lower tier currencies are Litecoin and Dogecoin with market capitalizations below 30B USD.Three stock market indexes NASDAQ(IXIC), Dow Jones (DJI), SP500(GSPC) and a crypto market index Cryptocurrency index (cci30). The data included volume, open, high, low, closing and dates.
 
-Most people view the S&P 500 (The Standard and Poor's 500 is a stock market index tracking the stock performance of 500 large companies listed on US exchanges) as a crucial benchmark index for the American stock market and overall global economy. In addition to Dow Jones, which until recently served as the primary indicator of the U.S. economy's health but only comprises 30 firms and is confined with in the short number of industries it covers and Nasdaq which is a capitalization-weighted index with more than 3,000 equities
-
-as constituents, which means that it assigns weightings based on the market caps of the individual companies. Whereas the selected cryptocurrencies are from the top traded list of cryptocurrencies curated to the availability of historic data on the analysis time frame.
+Most people view the S&P 500 (The Standard and Poor's 500 is a stock market index tracking the stock performance of 500 large companies listed on US exchanges) as a crucial benchmark index for the American stock market and overall global economy. In addition to Dow Jones, which until recently served as the primary indicator of the U.S. economy's health but only comprises 30 firms and is confined with in the short number of industries it covers and Nasdaq which is a capitalization-weighted index with more than 3,000 equities as constituents, which means that it assigns weightings based on the market caps of the individual companies. Whereas the selected cryptocurrencies are from the top traded list of cryptocurrencies curated to the availability of historic data on the analysis time frame.
 
 The Cci30 is a regulations-based index that is intended to quantify the overall development, daily movement, and long-term movement of the blockchain industry objectively. It achieves this by keeping track of the 30 biggest cryptocurrencies, omitting stable coins, by market capitalization. Crypto and stock datasets were downloaded from yahoo finance whereas cryptocurrency index data was downloaded from cci30 website (cci30). All data was collected in csv format.
 
-**Data pre-processing**
+### **Data pre-processing**
 
 After defining the Time period, which is considered for this analysis, all data is imported to Mathematica notebook. As part of understanding data, the raw data is plotted in Table form and the dimensions of the data is checked as all data should be in same dimension for further analysis. The data required for initial analysis is the Date and the Closing price. So, a function is defined to clean the data and select the date and closing value as the raw data had unwanted columns. Using this ‘deleteColumn’ function all non-essential columns are deleted. This clean data is then analysed in table form and the header strings “Dates” and “Closing” at the first row is removed using part function and from the resultant clean data, as it’s string value and will not go well with the timeseries creation. A timeseries (a list of values, such as x1, x2 or a list of time-value pairs, such as (t1, x1), (t2, x2),) is formed. Here the values for xi are closing value and ti are dates.
 
-**Plotting Data**
+### **Plotting Data**
 
-The Timeseries of all crypto data are grouped into a list and all indexes into another for better visualisation. ’DateListPlot’ (also known as a time series plot, that traverse value vi sequentially from left to right. Irrespective of the data's original sequence, the line presents the dates in chronological order before presenting the data). This is used as an initial
-
-analysis method to find if there are any trends. Then Histogram is plotted adjacently to respective list plots to compare the frequencies of those values, attached to each bin.
+The Timeseries of all crypto data are grouped into a list and all indexes into another for better visualisation. ’DateListPlot’ (also known as a time series plot, that traverse value vi sequentially from left to right. Irrespective of the data's original sequence, the line presents the dates in chronological order before presenting the data). This is used as an initial analysis method to find if there are any trends. Then Histogram is plotted adjacently to respective list plots to compare the frequencies of those values, attached to each bin.
 
 ![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.002.jpeg)
 
@@ -122,7 +79,7 @@ Fig 2: List plot and histogram plot of crypto to identify the trend and frequenc
 
 The plot of all Six cryptocurrencies shows a similar trend. All six currencies show Rapid increase from 2021 reaching their all-time. After which had a dramatic drop down on their price in 2022.
 
-**Correlation**
+### **Correlation**
 
 Correlation examines how two variables vary in relation to each other to determine the link, or association, between them. Statistical correlation is also defined as the simultaneous change of two variables and is often depicted by linear correlations. Correlation does not always imply causality. This is because a correlation does not mean that a set of variables cause each other to change; rather, it only shows how they are related. A positive correlation indicates that this linear relationship is positive and that the two variables are increasing or decreasing in the same direction. A negative correlation is the inverse of a positive correlation, in which the connection has a negative coefficient, and the variables vary in opposite ways.
 
@@ -144,7 +101,7 @@ Some noticeable price correlation insights we can see on this plot are SP500, Na
 
 index with Ethereum on top with 0.94. Finally, my first impression was that bitcoin and Ethereum would be the most correlated pair of crypto on this table, which turned out to be incorrect, as binance coin and Ethereum are clearly more connected (0.96) than any other pair of crypto on the table.
 
-**Returns**
+### **Returns**
 
 The returns for each timeseries are calculated using the formula below, which corresponds to Mathematica’s “Differences [Log]” function is used.
 
@@ -164,27 +121,12 @@ The returns correlation matrix shows different pattern to that of the price corr
 
 Consequently, both Bitcoin and Ethereum returns are highly connected to cci30 index return. The preliminary judgment following much investigation is that this is due to how the cci30 is calculated. Market capitalization is used by the S&P 500 to weigh its components. Considering that the top 52 companies in the S&P 500 represent about half of the overall weight, though this is quite normal in the mature markets. Inside the cryptocurrency sector, where Bitcoin and Ethereum account for the bulk of transactions, the situation is considerably more severe (cci30). of the total capitalization of the market. Nasdaq and Dow jones are more correlated to SP500 than with each other.
 
-**Volatility**
+### **Volatility**
 
 Standard Deviation, commonly used to measure volatility in stock market, quantifies or measures dispersion of data or distributions. Standard deviation is calculated by taking the square root of a value derived from comparing data points to a collective mean of a population (Investopedia 2022). The formula is:
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.007.png)
-
-
-𝑆𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝐷𝑒𝑣𝑖𝑎𝑡𝑖𝑜𝑛 (𝑡) =  
-
-1
-
 ![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.008.png)𝑛 − 1
 
-𝑡
-
-`    `𝑥𝑖 − 𝑥 2
-
-𝑖=𝑡−𝑛+1
-
-
-where 𝑥𝑖 represents log returns at time i and 𝑥 its average value.
 
 Fig 6: Standard deviation
 
@@ -210,21 +152,21 @@ The correlation matrix for the volatility is calculated to see if there are any 
 
 Fig 9: Volatility correlation matrix
 
-**Centrality**
+### **Centrality**
 
 Essentially by counting the links each node has, degree centrality establishes the significance of each node. It's the most basic method for measuring node connection. Indicators of centrality in graph theory provide numbers or ranks to nodes within a graph related to their network location. Graphs are mathematical constructs used to depict pairwise
 
 interactions between things (Newman). The main centrality measures used in this analysis are as follows:
 
-**Eigen-vector centrality**
+### **Eigen-vector centrality**
 
 The term "eigen centrality" also refers to the measurement of a node's power in a network known as eigenvector centrality. It assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes (Newman 2006) (Christian).
 
-**Betweenness centrality**
+### **Betweenness centrality**
 
 The number of occasions a node functions as a bridge over the shortest distance between two other nodes is measured by betweenness centrality. It was proposed by (Freeman) as a measure. According to his theory, vertices with a high betweenness are those whose occurrence on the shortest path that connects two randomly picked vertices has a high likelihood.
 
-**Centrality results**
+### **Centrality results**
 
 An adjacent matrix for the log returns correlation and price correlation are created and plotted (is also known as connection matrix, of a simple labelled graph is a matrix with rows and columns labelled by 0 or 1 according to if their adjacency). This is then used to plot an initial graph.
 
@@ -234,7 +176,7 @@ Fig 10: Weighted graph for both correlations
 
 Next, the eigen-vector centrality of each node is found. This gives a brief idea about the power of a node in the network. Bitcoin had the highest centrality value on the price data which showed the importance of bitcoin in this network. Whereas CCi30 got the highest score when it comes to both centralities on the returns data.
 
-**Plotting**
+### **Plotting**
 
 Now, the betweenness centrality and the community graph plot (Santo Fortunato) are plotted for both on price and returns correlations. Betweenness is to find out the importance or the probability of occurrence of each node in a randomly selected path. The community graph plot is plotted to find the formation of clusters or any nodes that connect the clusters if any. This allows us to make a more informed assessment or investment decision as Communities, also referred to as clusters or modules, are collections of vertices that most likely have comparable traits and/or function in related ways inside the network. A node's connections to other nodes within the same community are quite strong (Newman).
 
@@ -242,13 +184,13 @@ Now, the betweenness centrality and the community graph plot (Santo Fortunato) a
 
 Fig 11: Betweenness and community plot for both correlations.
 
-**Main Results**
+## **Main Results**
 
 By finding the correlation of price of all selected data, it is proved that all stock indexes are highly connected and another interesting correlation is that Ethereum and Binance coin are more connected than Ethereum and Bitcoin (Fig. 3). However, the Log returns correlation shows that cci30 is highly connected to both Bitcoin and Ethereum (Fig. 5). Finding the moving average of volatility of the assets showed that all the cryptocurrencies and cci30 are extremely volatile compared to stock index (Fig. 7).
 
 The weighted graphs (Fig. 10) of price correlation forms a network with 8 nodes excluding Ripple and Doge, whereas for Log returns it forms two graphs one with all stock index and another with bitcoin, Ethereum, cci30 and Cardano. Eigen vector centrality shows that bitcoin is the most important node in the network of prices and cci30 on Log returns data. The price correlation was plotted as a community plot (Fig. 11) and Betweenness centrality plot which showed that Bitcoin is the most central node and there exist 2 clusters, on side being bitcoin and all stock indexes and another side with all the rest of the cryptocurrencies. Whereas the Log return’s plots showed that the cci30 was the most important node based on betweenness centrality and there formed two clusters, one with all stock index and another with all cryptocurrencies.
 
-**Discussion**
+## **Discussion**
 
 Research was on the interconnectedness of crypto and stocks. In this regard, one objective was to measure the degree of connection between the selected cryptocurrencies and indices using correlation matrix. The data was cleaned and timeseries was created. After initial plotting and analysis, the correlation matrix was created for both the price and log returns of the data. The initial aim was to find the correlations between assets and to find the Log returns and volatility. Typically, you prefer to invest in non-correlative assets (Myles). And invest in two low-correlated assets, but you might also argue that two assets with a path linking them but not being adjacent are also a suitable type of investment. The network created from the log returns time series is used for this investigation. Furthermore, two
 
@@ -274,9 +216,8 @@ In order to build a portfolio, one should select assets that are poorly linked o
 
 
 
-Word count [Abstract-298] [Body- 3915]
 
-**Reference**
+## **Reference**
 
 Ali R., Barrdear, J., Clews, R., Southgate, J., (2014). ‘Bank of England Quarterly Bulletin 2012Q4’, Bank of England Quarterly Bulletin, 276–286.
 
