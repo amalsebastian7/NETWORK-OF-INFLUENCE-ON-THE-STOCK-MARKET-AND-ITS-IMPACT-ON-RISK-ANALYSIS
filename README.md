@@ -106,7 +106,7 @@ index with Ethereum on top with 0.94. Finally, my first impression was that bitc
 
 The returns for each timeseries are calculated using the formula below, which corresponds to Mathematica’s “Differences [Log]” function is used.
 
-![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.005.png.png)
+![](Images/Aspose.Words.be1e75a0-ae2d-435a-9f15-b300d95acce1.005.png.jpg)
 
 Fig 4: Returns equation
 
