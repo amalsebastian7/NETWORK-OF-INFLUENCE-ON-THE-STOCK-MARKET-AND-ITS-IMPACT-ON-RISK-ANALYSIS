@@ -126,7 +126,7 @@ Consequently, both Bitcoin and Ethereum returns are highly connected to cci30 in
 
 Standard Deviation, commonly used to measure volatility in stock market, quantifies or measures dispersion of data or distributions. Standard deviation is calculated by taking the square root of a value derived from comparing data points to a collective mean of a population (Investopedia 2022). The formula is:
 
-<img src="https://64.media.tumblr.com/cb5e29dacdd0c30a2f02779b328fbf11/e820bbb2e5a1cdbb-39/s2048x3072/1502cb3081c2d9eab437c6bb1fb4d52c6a849245.gif" width="800" height="400" />
+<img src="https://github.com/amalsebastian7/NETWORK-OF-INFLUENCE-ON-THE-STOCK-MARKET-AND-ITS-IMPACT-ON-RISK-ANALYSIS/blob/0794e3bae1c636e36082c736d61bc8d05a613063/Images/standard%20deviation.jpg" width="800" height="400" />
 
 
 Fig 6: Standard deviation
